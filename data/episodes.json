@@ -8,6 +8,7 @@
     "numero": 42,
     "duree": "47 min",
     "date": "2025-03-15",
+    "categorie": "Santé",
     "resume": "Sophie Laurent, chirurgienne esthétique à Paris depuis 15 ans, nous ouvre ses livres de comptes. Du prix réel d'une rhinoplastie aux charges d'un cabinet en centre-ville, elle détaille un métier où le chiffre d'affaires impressionne mais où les marges sont plus subtiles qu'on ne le croit.",
     "chiffres": [
       { "label": "Chiffre d'affaires annuel", "valeur": "850 000 €" },
@@ -29,6 +30,7 @@
     "numero": 41,
     "duree": "52 min",
     "date": "2025-03-08",
+    "categorie": "Artisanat",
     "resume": "Marc Dubois fabrique 400 baguettes par jour dans sa boulangerie du Marais. Entre la flambée du prix de la farine, le coût de l'énergie et la guerre des prix, il nous révèle la réalité financière d'un métier passion. Spoiler : la marge sur un croissant vous surprendra.",
     "chiffres": [
       { "label": "Chiffre d'affaires annuel", "valeur": "480 000 €" },
@@ -50,6 +52,7 @@
     "numero": 40,
     "duree": "44 min",
     "date": "2025-03-01",
+    "categorie": "Professions libérales",
     "resume": "Inès Karim est avocate d'affaires dans un grand cabinet parisien. Elle décrypte les écarts de rémunération entre collaborateurs et associés, le système des heures facturables et pourquoi certains avocats gagnent dix fois plus que d'autres.",
     "chiffres": [
       { "label": "Salaire junior (collaborateur)", "valeur": "4 500 €/mois" },
@@ -71,6 +74,7 @@
     "numero": 39,
     "duree": "50 min",
     "date": "2025-02-22",
+    "categorie": "Immobilier",
     "resume": "Thomas Renard vend des appartements à Lyon depuis 8 ans. Il nous explique le système de commissions, la différence entre mandataire et salarié, et pourquoi un bon mois peut rapporter plus qu'un trimestre entier.",
     "chiffres": [
       { "label": "Commission moyenne", "valeur": "5 %" },
@@ -92,6 +96,7 @@
     "numero": 38,
     "duree": "41 min",
     "date": "2025-02-15",
+    "categorie": "Divertissement",
     "resume": "Léa Martin, 280 000 abonnés sur Instagram, décortique ses revenus : placements de produits, liens affiliés, collaborations marques. Elle révèle les vrais montants derrière les posts sponsorisés et pourquoi la plupart des créateurs ne vivent pas de leur contenu.",
     "chiffres": [
       { "label": "Revenu mensuel moyen", "valeur": "6 500 €" },
@@ -113,6 +118,7 @@
     "numero": 37,
     "duree": "46 min",
     "date": "2025-02-08",
+    "categorie": "Artisanat",
     "resume": "Karim Benali est plombier à son compte à Marseille. Il nous explique comment il fixe ses tarifs, combien lui coûte son camionnette, et pourquoi les urgences du dimanche sont sa meilleure source de revenus. Un épisode qui revalorise les métiers manuels.",
     "chiffres": [
       { "label": "Taux horaire facturé", "valeur": "55 €" },
