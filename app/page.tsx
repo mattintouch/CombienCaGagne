@@ -1,6 +1,7 @@
 import Link from "next/link";
 import episodes from "@/data/episodes.json";
 import NewsletterForm from "@/components/NewsletterForm";
+import EpisodeCard from "@/components/EpisodeCard";
 
 const latestEpisode = episodes[0];
 
@@ -212,27 +213,7 @@ export default function Home() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {episodes.map((ep) => (
-            <Link
-              key={ep.id}
-              href={`/episodes/${ep.slug}`}
-              className="group rounded-2xl border border-border bg-white p-6 transition-shadow hover:shadow-md"
-            >
-              <span className="text-xs font-semibold uppercase tracking-wider text-accent">
-                #{ep.numero}
-              </span>
-              <h3 className="mt-2 text-lg font-bold leading-snug group-hover:text-accent">
-                {ep.metier}
-              </h3>
-              <p className="mt-1 text-sm text-muted">
-                avec {ep.invite}
-              </p>
-              <div className="mt-4 flex items-center justify-between">
-                <span className="text-xs text-muted">{ep.duree}</span>
-                <span className="text-sm font-semibold text-accent opacity-0 transition-opacity group-hover:opacity-100">
-                  Écouter &rarr;
-                </span>
-              </div>
-            </Link>
+            <EpisodeCard key={ep.id} episode={ep} variant="grid" />
           ))}
         </div>
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import episodes from "@/data/episodes.json";
 import NewsletterForm from "@/components/NewsletterForm";
+import EpisodeCard from "@/components/EpisodeCard";
 
 const SITE_URL = "https://combiencagagne.fr";
 
@@ -315,27 +316,7 @@ export default async function EpisodePage({ params }: Props) {
           <h2 className="text-xl font-bold">Épisodes similaires</h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-3">
             {related.map((ep) => (
-              <Link
-                key={ep.id}
-                href={`/episodes/${ep.slug}`}
-                className="group rounded-2xl border border-border bg-white p-5 transition-shadow hover:shadow-md"
-              >
-                <span className="text-xs font-semibold uppercase tracking-wider text-accent">
-                  #{ep.numero}
-                </span>
-                <h3 className="mt-2 text-base font-bold leading-snug group-hover:text-accent">
-                  {ep.metier}
-                </h3>
-                <p className="mt-1 text-sm text-muted">
-                  avec {ep.invite}
-                </p>
-                <div className="mt-3 flex items-center justify-between">
-                  <span className="text-xs text-muted">{ep.duree}</span>
-                  <span className="text-sm font-semibold text-accent opacity-0 transition-opacity group-hover:opacity-100">
-                    Écouter &rarr;
-                  </span>
-                </div>
-              </Link>
+              <EpisodeCard key={ep.id} episode={ep} variant="compact" />
             ))}
           </div>
         </section>

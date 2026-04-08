@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Link from "next/link";
+import EpisodeCard from "./EpisodeCard";
 
 type Episode = {
   id: number;
@@ -24,14 +24,6 @@ type Props = {
 };
 
 const PAGE_SIZE = 12;
-
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("fr-FR", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
-}
 
 function GridIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -173,41 +165,7 @@ export default function EpisodesArchive({ episodes, categories }: Props) {
       {view === "grid" && (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((ep) => (
-            <Link
-              key={ep.id}
-              href={`/episodes/${ep.slug}`}
-              className="group relative flex flex-col rounded-2xl border border-border bg-white transition-shadow hover:shadow-md"
-            >
-              {/* Number overlay card top */}
-              <div className="relative flex h-36 items-center justify-center rounded-t-2xl bg-gradient-to-br from-foreground to-foreground/90">
-                <span className="text-6xl font-black text-white/20">
-                  #{ep.numero}
-                </span>
-                <span className="absolute bottom-3 right-3 rounded-full bg-accent px-2.5 py-0.5 text-xs font-semibold text-white">
-                  {ep.duree}
-                </span>
-              </div>
-
-              <div className="flex flex-1 flex-col p-5">
-                <span className="text-xs font-semibold uppercase tracking-wider text-accent">
-                  {ep.categorie}
-                </span>
-                <h2 className="mt-1.5 text-lg font-bold leading-snug group-hover:text-accent">
-                  {ep.metier}
-                </h2>
-                <p className="mt-1 text-sm text-muted">
-                  avec {ep.invite}
-                </p>
-                <div className="mt-auto pt-4 flex items-center justify-between">
-                  <span className="text-xs text-muted">
-                    {formatDate(ep.date)}
-                  </span>
-                  <span className="text-sm font-semibold text-accent opacity-0 transition-opacity group-hover:opacity-100">
-                    Écouter &rarr;
-                  </span>
-                </div>
-              </div>
-            </Link>
+            <EpisodeCard key={ep.id} episode={ep} variant="grid" />
           ))}
         </div>
       )}
@@ -216,50 +174,7 @@ export default function EpisodesArchive({ episodes, categories }: Props) {
       {view === "list" && (
         <div className="space-y-3">
           {visible.map((ep) => (
-            <Link
-              key={ep.id}
-              href={`/episodes/${ep.slug}`}
-              className="group flex items-center gap-4 rounded-xl border border-border bg-white p-4 transition-shadow hover:shadow-md sm:gap-6 sm:p-5"
-            >
-              <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl bg-foreground">
-                <span className="text-lg font-black text-white/40">
-                  {ep.numero}
-                </span>
-              </div>
-
-              <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="truncate text-base font-bold group-hover:text-accent">
-                    {ep.metier}
-                  </h2>
-                  <span className="hidden rounded-full bg-accent/10 px-2 py-0.5 text-xs font-medium text-accent sm:inline-block">
-                    {ep.categorie}
-                  </span>
-                </div>
-                <p className="mt-0.5 text-sm text-muted">
-                  avec {ep.invite}
-                </p>
-              </div>
-
-              <div className="hidden flex-shrink-0 text-right sm:block">
-                <p className="text-sm font-medium">{ep.duree}</p>
-                <p className="text-xs text-muted">{formatDate(ep.date)}</p>
-              </div>
-
-              <svg
-                className="h-5 w-5 flex-shrink-0 text-muted transition-colors group-hover:text-accent"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
+            <EpisodeCard key={ep.id} episode={ep} variant="list" />
           ))}
         </div>
       )}
