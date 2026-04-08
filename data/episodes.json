@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "slug": "combien-gagne-un-chirurgien-esthetique",
+    "titre": "Combien gagne un chirurgien esthétique ?",
+    "metier": "Chirurgien esthétique",
+    "invite": "Dr. Sophie Laurent",
+    "numero": 42,
+    "duree": "47 min",
+    "date": "2025-03-15",
+    "resume": "Sophie Laurent, chirurgienne esthétique à Paris depuis 15 ans, nous ouvre ses livres de comptes. Du prix réel d'une rhinoplastie aux charges d'un cabinet en centre-ville, elle détaille un métier où le chiffre d'affaires impressionne mais où les marges sont plus subtiles qu'on ne le croit.",
+    "chiffres": [
+      { "label": "Chiffre d'affaires annuel", "valeur": "850 000 €" },
+      { "label": "Revenu net mensuel", "valeur": "18 000 €" },
+      { "label": "Années d'études", "valeur": "12 ans" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg",
+      "youtube": "https://youtube.com/watch?v=example-ccg"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "combien-gagne-un-boulanger-artisan",
+    "titre": "Combien gagne un boulanger artisan ?",
+    "metier": "Boulanger artisan",
+    "invite": "Marc Dubois",
+    "numero": 41,
+    "duree": "52 min",
+    "date": "2025-03-08",
+    "resume": "Marc Dubois fabrique 400 baguettes par jour dans sa boulangerie du Marais. Entre la flambée du prix de la farine, le coût de l'énergie et la guerre des prix, il nous révèle la réalité financière d'un métier passion. Spoiler : la marge sur un croissant vous surprendra.",
+    "chiffres": [
+      { "label": "Chiffre d'affaires annuel", "valeur": "480 000 €" },
+      { "label": "Revenu net mensuel", "valeur": "3 200 €" },
+      { "label": "Marge sur une baguette", "valeur": "0,15 €" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg-41",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg-41",
+      "youtube": "https://youtube.com/watch?v=example-ccg-41"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "combien-gagne-une-avocate-affaires",
+    "titre": "Combien gagne une avocate d'affaires ?",
+    "metier": "Avocate d'affaires",
+    "invite": "Maître Inès Karim",
+    "numero": 40,
+    "duree": "44 min",
+    "date": "2025-03-01",
+    "resume": "Inès Karim est avocate d'affaires dans un grand cabinet parisien. Elle décrypte les écarts de rémunération entre collaborateurs et associés, le système des heures facturables et pourquoi certains avocats gagnent dix fois plus que d'autres.",
+    "chiffres": [
+      { "label": "Salaire junior (collaborateur)", "valeur": "4 500 €/mois" },
+      { "label": "Revenu associé senior", "valeur": "35 000 €/mois" },
+      { "label": "Taux horaire moyen facturé", "valeur": "450 €" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg-40",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg-40",
+      "youtube": "https://youtube.com/watch?v=example-ccg-40"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "combien-gagne-un-agent-immobilier",
+    "titre": "Combien gagne un agent immobilier ?",
+    "metier": "Agent immobilier",
+    "invite": "Thomas Renard",
+    "numero": 39,
+    "duree": "50 min",
+    "date": "2025-02-22",
+    "resume": "Thomas Renard vend des appartements à Lyon depuis 8 ans. Il nous explique le système de commissions, la différence entre mandataire et salarié, et pourquoi un bon mois peut rapporter plus qu'un trimestre entier.",
+    "chiffres": [
+      { "label": "Commission moyenne", "valeur": "5 %" },
+      { "label": "Revenu net annuel", "valeur": "62 000 €" },
+      { "label": "Ventes par an", "valeur": "25" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg-39",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg-39",
+      "youtube": "https://youtube.com/watch?v=example-ccg-39"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "combien-gagne-une-influenceuse-mode",
+    "titre": "Combien gagne une influenceuse mode ?",
+    "metier": "Influenceuse mode",
+    "invite": "Léa Martin",
+    "numero": 38,
+    "duree": "41 min",
+    "date": "2025-02-15",
+    "resume": "Léa Martin, 280 000 abonnés sur Instagram, décortique ses revenus : placements de produits, liens affiliés, collaborations marques. Elle révèle les vrais montants derrière les posts sponsorisés et pourquoi la plupart des créateurs ne vivent pas de leur contenu.",
+    "chiffres": [
+      { "label": "Revenu mensuel moyen", "valeur": "6 500 €" },
+      { "label": "Prix d'un post sponsorisé", "valeur": "2 000 €" },
+      { "label": "Part affiliation", "valeur": "30 %" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg-38",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg-38",
+      "youtube": "https://youtube.com/watch?v=example-ccg-38"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "combien-gagne-un-plombier-a-son-compte",
+    "titre": "Combien gagne un plombier à son compte ?",
+    "metier": "Plombier indépendant",
+    "invite": "Karim Benali",
+    "numero": 37,
+    "duree": "46 min",
+    "date": "2025-02-08",
+    "resume": "Karim Benali est plombier à son compte à Marseille. Il nous explique comment il fixe ses tarifs, combien lui coûte son camionnette, et pourquoi les urgences du dimanche sont sa meilleure source de revenus. Un épisode qui revalorise les métiers manuels.",
+    "chiffres": [
+      { "label": "Taux horaire facturé", "valeur": "55 €" },
+      { "label": "Revenu net mensuel", "valeur": "4 200 €" },
+      { "label": "Charges mensuelles", "valeur": "1 800 €" }
+    ],
+    "plateformes": {
+      "spotify": "https://open.spotify.com/show/example-ccg-37",
+      "apple": "https://podcasts.apple.com/podcast/example-ccg-37",
+      "youtube": "https://youtube.com/watch?v=example-ccg-37"
+    }
+  }
+]
