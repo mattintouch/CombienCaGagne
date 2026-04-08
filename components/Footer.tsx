@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           <div>
-            <Link href="/" className="text-lg font-bold tracking-tight">
+            <Link href="/" className="font-serif text-lg tracking-tight">
               Combien<span className="text-accent"> Ça Gagne</span>
             </Link>
             <p className="mt-1 text-sm text-muted">

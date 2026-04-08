@@ -57,10 +57,10 @@ export default function Home() {
             Podcast par Orso Media
           </p>
 
-          <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-6xl">
+          <h1 className="mt-4 font-serif text-5xl leading-[1.1] tracking-tight sm:text-7xl">
             Combien ils gagnent
             <br />
-            <span className="text-accent">vraiment</span> ?
+            <span className="italic text-accent">vraiment</span> ?
           </h1>
 
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
@@ -69,15 +69,15 @@ export default function Home() {
           </p>
 
           {/* Dernier épisode mis en avant */}
-          <div className="mt-10 rounded-2xl border border-border bg-white p-6 shadow-sm sm:max-w-xl">
-            <p className="text-xs font-medium uppercase tracking-wider text-muted">
+          <div className="mt-10 rounded-2xl border border-border bg-surface p-6 sm:max-w-xl">
+            <p className="font-mono text-xs uppercase tracking-wider text-muted">
               Dernier épisode — #{latestEpisode.numero}
             </p>
-            <h2 className="mt-2 text-xl font-bold leading-snug">
+            <h2 className="mt-2 font-serif text-xl leading-snug">
               {latestEpisode.titre}
             </h2>
             <p className="mt-1 text-sm text-muted">
-              avec {latestEpisode.invite} · {latestEpisode.duree}
+              avec {latestEpisode.invite} · <span className="font-mono">{latestEpisode.duree}</span>
             </p>
 
             <div className="mt-5 flex flex-wrap gap-3">
@@ -85,7 +85,7 @@ export default function Home() {
                 href={latestEpisode.plateformes.spotify}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
               >
                 <SpotifyIcon className="h-4 w-4" />
                 Écouter sur Spotify
@@ -94,7 +94,7 @@ export default function Home() {
                 href={latestEpisode.plateformes.apple}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[#872EC4] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full bg-[#872EC4] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
               >
                 <AppleIcon className="h-4 w-4" />
                 Apple Podcasts
@@ -103,7 +103,7 @@ export default function Home() {
                 href={latestEpisode.plateformes.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-[#FF0000] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-full bg-[#FF0000] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90"
               >
                 <YouTubeIcon className="h-4 w-4" />
                 YouTube
@@ -120,7 +120,7 @@ export default function Home() {
               href="https://open.spotify.com/show/example-ccg"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
             >
               <SpotifyIcon className="h-4 w-4 text-[#1DB954]" />
               Spotify
@@ -129,7 +129,7 @@ export default function Home() {
               href="https://podcasts.apple.com/podcast/example-ccg"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
             >
               <AppleIcon className="h-4 w-4 text-[#872EC4]" />
               Apple Podcasts
@@ -138,7 +138,7 @@ export default function Home() {
               href="https://youtube.com/@combiencagagne"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
             >
               <YouTubeIcon className="h-4 w-4 text-[#FF0000]" />
               YouTube
@@ -148,24 +148,24 @@ export default function Home() {
       </section>
 
       {/* ── Preuve sociale ── */}
-      <section className="border-y border-border bg-white">
+      <section className="border-y border-border bg-surface">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-          {/* Chiffres clés */}
+          {/* Chiffres clés — monospace */}
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-12">
             <div>
-              <p className="text-3xl font-extrabold text-accent sm:text-4xl">
+              <p className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                 42+
               </p>
               <p className="mt-1 text-sm text-muted">épisodes publiés</p>
             </div>
             <div>
-              <p className="text-3xl font-extrabold text-accent sm:text-4xl">
+              <p className="font-serif text-3xl text-accent sm:text-4xl">
                 Chaque mercredi
               </p>
               <p className="mt-1 text-sm text-muted">un nouveau métier décrypté</p>
             </div>
             <div className="col-span-2 sm:col-span-1">
-              <p className="text-3xl font-extrabold text-accent sm:text-4xl">
+              <p className="font-mono text-3xl font-bold text-accent sm:text-4xl">
                 15 000+
               </p>
               <p className="mt-1 text-sm text-muted">auditeurs par épisode</p>
@@ -179,7 +179,7 @@ export default function Home() {
                 key={t.author}
                 className="rounded-xl border border-border bg-background p-6"
               >
-                <p className="text-sm leading-relaxed text-foreground">
+                <p className="font-serif text-base italic leading-relaxed text-foreground">
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <footer className="mt-4">
@@ -196,7 +196,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="flex items-end justify-between">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight">
+            <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
               Derniers épisodes
             </h2>
             <p className="mt-2 text-muted">
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
           <Link
             href="/episodes"
-            className="hidden text-sm font-semibold text-accent transition-colors hover:text-accent-hover sm:block"
+            className="hidden text-sm font-semibold text-accent hover:text-accent-hover sm:block"
           >
             Voir tous les épisodes &rarr;
           </Link>
@@ -231,10 +231,10 @@ export default function Home() {
       <section className="bg-foreground text-white">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="font-serif text-3xl tracking-tight sm:text-4xl">
               Les chiffres qui comptent,
               <br />
-              <span className="text-accent">dans votre boîte mail</span>
+              <span className="italic text-accent">dans votre boîte mail</span>
             </h2>
             <p className="mt-4 text-base leading-relaxed text-white/70">
               Chaque jeudi, recevez le résumé de l&apos;épisode, les chiffres
@@ -254,12 +254,12 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-start sm:gap-12">
           {/* Photo placeholder */}
-          <div className="h-40 w-40 flex-shrink-0 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-            <span className="text-4xl font-bold text-accent">CL</span>
+          <div className="flex h-40 w-40 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-accent/20 to-accent/5">
+            <span className="font-serif text-4xl text-accent">CL</span>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">
+            <h2 className="font-serif text-2xl tracking-tight sm:text-3xl">
               Présenté par Clémence Lepic
             </h2>
             <p className="mt-3 max-w-lg text-base leading-relaxed text-muted">
@@ -269,7 +269,7 @@ export default function Home() {
             </p>
             <Link
               href="/a-propos"
-              className="mt-4 inline-block text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
+              className="mt-4 inline-block text-sm font-semibold text-accent hover:text-accent-hover"
             >
               En savoir plus &rarr;
             </Link>

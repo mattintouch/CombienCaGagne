@@ -23,7 +23,7 @@ export default function EpisodesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
       <header className="mb-12">
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <h1 className="font-serif text-3xl tracking-tight sm:text-4xl">
           Tous les épisodes
         </h1>
         <p className="mt-3 max-w-xl text-lg text-muted">

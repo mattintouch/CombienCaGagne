@@ -1,12 +1,26 @@
 @import "tailwindcss";
 
+/* ── Fontsource imports (local, no network fetch) ── */
+@import "@fontsource/instrument-serif/400.css";
+@import "@fontsource/instrument-serif/400-italic.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/700.css";
+
 :root {
+  /* ── Palette ── */
   --background: #FAFAF8;
   --foreground: #0F0F0F;
   --accent: #E8611A;
   --accent-hover: #D4570F;
+  --positive: #5C6B45;
+  --positive-light: #5C6B4520;
   --muted: #6B6B6B;
   --border: #E5E5E3;
+  --surface: #F0EFEC;
 }
 
 @theme inline {
@@ -14,19 +28,30 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
+  --color-positive: var(--positive);
+  --color-positive-light: var(--positive-light);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-surface: var(--surface);
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: ui-monospace, monospace;
+  --font-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-sans);
 }
 
 ::selection {
   background-color: #E8611A;
   color: white;
+}
+
+/* ── Micro-transitions (150ms) ── */
+a, button {
+  transition-property: color, background-color, border-color, opacity, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
 }

@@ -39,10 +39,10 @@ export default function NewsletterPage() {
         <p className="text-sm font-semibold uppercase tracking-widest text-accent">
           Newsletter gratuite
         </p>
-        <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+        <h1 className="mt-4 font-serif text-3xl leading-tight tracking-tight sm:text-5xl">
           Les vrais chiffres,
           <br />
-          <span className="text-accent">chaque mercredi.</span>
+          <span className="italic text-accent">chaque mercredi.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-muted">
           Chaque semaine, Clémence décrypte un métier : CA, charges, bénéfice
@@ -78,8 +78,8 @@ export default function NewsletterPage() {
 
       {/* ── Formulaire ── */}
       <section className="mt-12 rounded-2xl bg-foreground p-8 text-white sm:p-10">
-        <h2 className="text-center text-2xl font-bold tracking-tight">
-          Rejoignez <span className="text-accent">5 000+ auditeurs</span> déjà
+        <h2 className="text-center font-serif text-2xl tracking-tight">
+          Rejoignez <span className="font-mono text-accent">5 000+</span> auditeurs déjà
           abonnés
         </h2>
 
@@ -92,7 +92,7 @@ export default function NewsletterPage() {
 
       {/* ── Derniers numéros ── */}
       <section className="mt-16">
-        <h2 className="text-xl font-bold">Derniers numéros</h2>
+        <h2 className="font-serif text-xl">Derniers numéros</h2>
         <div className="mt-6 space-y-4">
           {pastIssues.map((issue) => (
             <div

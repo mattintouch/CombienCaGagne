@@ -179,7 +179,7 @@ export default async function EpisodePage({ params }: Props) {
             <span className="text-sm text-muted">· {episode.duree}</span>
           </div>
 
-          <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
+          <h1 className="mt-4 font-serif text-3xl leading-tight tracking-tight sm:text-4xl">
             {episode.titre}
           </h1>
 
@@ -236,20 +236,20 @@ export default async function EpisodePage({ params }: Props) {
 
         {/* ── Résumé ── */}
         <section className="mt-12">
-          <h2 className="text-xl font-bold">Résumé de l&apos;épisode</h2>
+          <h2 className="font-serif text-xl">Résumé de l&apos;épisode</h2>
           <p className="mt-4 leading-relaxed text-muted">{episode.resume}</p>
         </section>
 
         {/* ── Chiffres clés ── */}
         <section className="mt-12">
-          <h2 className="text-xl font-bold">Les chiffres clés</h2>
+          <h2 className="font-serif text-xl">Les chiffres clés</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             {episode.chiffres.map((chiffre) => (
               <div
                 key={chiffre.label}
-                className="rounded-2xl border border-border bg-white p-6 text-center"
+                className="rounded-2xl border border-border bg-surface p-6 text-center"
               >
-                <p className="text-3xl font-extrabold tracking-tight text-accent">
+                <p className="font-mono text-3xl font-bold tracking-tight text-accent">
                   {chiffre.valeur}
                 </p>
                 <p className="mt-2 text-sm text-muted">{chiffre.label}</p>
@@ -260,8 +260,8 @@ export default async function EpisodePage({ params }: Props) {
 
         {/* ── Show Notes ── */}
         <section className="mt-12">
-          <h2 className="text-xl font-bold">Notes de l&apos;épisode</h2>
-          <div className="mt-4 rounded-2xl border border-border bg-white p-6">
+          <h2 className="font-serif text-xl">Notes de l&apos;épisode</h2>
+          <div className="mt-4 rounded-2xl border border-border bg-surface p-6">
             <ul className="space-y-3 text-sm leading-relaxed text-muted">
               <li className="flex gap-2">
                 <span className="mt-0.5 text-accent">-</span>
@@ -288,7 +288,7 @@ export default async function EpisodePage({ params }: Props) {
                 <li key={c.label} className="flex gap-2">
                   <span className="mt-0.5 text-accent">-</span>
                   <span>
-                    {c.label} : <strong className="text-foreground">{c.valeur}</strong>
+                    {c.label} : <strong className="font-mono text-foreground">{c.valeur}</strong>
                   </span>
                 </li>
               ))}
@@ -298,9 +298,9 @@ export default async function EpisodePage({ params }: Props) {
 
         {/* ── CTA Newsletter ── */}
         <section className="mt-12 rounded-2xl bg-foreground p-8 text-white sm:p-10">
-          <h2 className="text-2xl font-bold tracking-tight">
+          <h2 className="font-serif text-2xl tracking-tight">
             Les chiffres de la semaine,
-            <span className="text-accent"> dans votre boîte mail</span>
+            <span className="italic text-accent"> dans votre boîte mail</span>
           </h2>
           <p className="mt-2 text-sm text-white/70">
             Recevez le résumé de chaque épisode + un bonus exclusif chaque jeudi.
@@ -313,7 +313,7 @@ export default async function EpisodePage({ params }: Props) {
 
         {/* ── Épisodes connexes ── */}
         <section className="mt-16">
-          <h2 className="text-xl font-bold">Épisodes similaires</h2>
+          <h2 className="font-serif text-xl">Épisodes similaires</h2>
           <div className="mt-6 grid gap-6 sm:grid-cols-3">
             {related.map((ep) => (
               <EpisodeCard key={ep.id} episode={ep} variant="compact" />
