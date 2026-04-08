@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { PLATFORMS } from "@/data/platforms";
 
 const navLinks = [
   { href: "/episodes", label: "Épisodes" },
@@ -39,7 +40,7 @@ export default function Header() {
         {/* Boutons plateformes desktop */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="https://open.spotify.com/show/example-ccg"
+            href={PLATFORMS.spotify}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-4 py-2 text-sm font-medium text-white hover:opacity-90"
@@ -50,7 +51,7 @@ export default function Header() {
             Spotify
           </a>
           <a
-            href="https://podcasts.apple.com/podcast/example-ccg"
+            href={PLATFORMS.apple}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#872EC4] px-4 py-2 text-sm font-medium text-white hover:opacity-90"
@@ -96,7 +97,7 @@ export default function Header() {
             ))}
             <div className="mt-3 flex gap-3 px-3">
               <a
-                href="https://open.spotify.com/show/example-ccg"
+                href={PLATFORMS.spotify}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#1DB954] px-4 py-2 text-sm font-medium text-white"
@@ -104,7 +105,7 @@ export default function Header() {
                 Spotify
               </a>
               <a
-                href="https://podcasts.apple.com/podcast/example-ccg"
+                href={PLATFORMS.apple}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#872EC4] px-4 py-2 text-sm font-medium text-white"

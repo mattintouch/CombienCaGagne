@@ -1,5 +1,6 @@
 import Link from "next/link";
 import episodes from "@/data/episodes.json";
+import { PLATFORMS } from "@/data/platforms";
 import NewsletterForm from "@/components/NewsletterForm";
 import EpisodeCard from "@/components/EpisodeCard";
 
@@ -117,7 +118,7 @@ export default function Home() {
               S&apos;abonner :
             </span>
             <a
-              href="https://open.spotify.com/show/example-ccg"
+              href={PLATFORMS.spotify}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
@@ -126,7 +127,7 @@ export default function Home() {
               Spotify
             </a>
             <a
-              href="https://podcasts.apple.com/podcast/example-ccg"
+              href={PLATFORMS.apple}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
@@ -135,7 +136,7 @@ export default function Home() {
               Apple Podcasts
             </a>
             <a
-              href="https://youtube.com/@combiencagagne"
+              href={PLATFORMS.youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline decoration-border underline-offset-4 hover:text-accent"
